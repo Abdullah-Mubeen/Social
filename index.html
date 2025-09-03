@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Above the Social - Digital Excellence</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🚀</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Navigation -->
+    <nav class="navigation" id="navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Above</span>
+                <span class="logo-accent">the</span>
+                <span class="logo-text">Social</span>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav-line"></span>
+                <span class="nav-line"></span>
+                <span class="nav-line"></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay">
+        <div class="nav-overlay-bg"></div>
+        <div class="nav-content">
+            <div class="nav-menu">
+                <a href="#home" class="nav-menu-link" data-text="Home">
+                    <span class="nav-link-number">01</span>
+                    <span class="nav-link-text">Home</span>
+                </a>
+                <a href="#about" class="nav-menu-link" data-text="About">
+                    <span class="nav-link-number">02</span>
+                    <span class="nav-link-text">About</span>
+                </a>
+                <a href="#services" class="nav-menu-link" data-text="Services">
+                    <span class="nav-link-number">03</span>
+                    <span class="nav-link-text">Services</span>
+                </a>
+                <a href="#work" class="nav-menu-link" data-text="Work">
+                    <span class="nav-link-number">04</span>
+                    <span class="nav-link-text">Work</span>
+                </a>
+                <a href="#contact" class="nav-menu-link" data-text="Contact">
+                    <span class="nav-link-number">05</span>
+                    <span class="nav-link-text">Contact</span>
+                </a>
+            </div>
+            
+            <div class="nav-info">
+                <div class="nav-info-section">
+                    <h3>Get in touch</h3>
+                    <p>hello@abovethesocial.com</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="nav-info-section">
+                    <h3>Follow us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home" data-section="hero">
+            <div class="hero-bg">
+                <div class="gradient-orbs">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
+                    <div class="orb orb-3"></div>
+                </div>
+                <div class="particle-grid" id="particleGrid"></div>
+            </div>
+            
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-text">Digital Excellence</span>
+                        <div class="badge-glow"></div>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line">
+                            <span class="title-word">Elevating</span>
+                        </span>
+                        <span class="title-line">
+                            <span class="title-word">Brands</span>
+                            <span class="title-highlight">Above</span>
+                        </span>
+                        <span class="title-line">
+                            <span class="title-word">the</span>
+                            <span class="title-word">Social</span>
+                        </span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        We craft extraordinary digital experiences that transform brands 
+                        and drive unprecedented growth through innovative strategies.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Brands Elevated</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">500%</span>
+                            <span class="stat-label">Avg Growth</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" id="startProjectBtn">
+                            <span class="btn-text">Start Your Project</span>
+                            <div class="btn-bg"></div>
+                        </button>
+                        <button class="btn btn-secondary" id="viewWorkBtn">
+                            <span class="btn-text">View Our Work</span>
+                            <div class="btn-bg"></div>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="visual-container">
+                        <div class="floating-elements">
+                            <div class="floating-shape shape-circle"></div>
+                            <div class="floating-shape shape-square"></div>
+                            <div class="floating-shape shape-triangle"></div>
+                            <div class="floating-shape shape-hexagon"></div>
+                        </div>
+                        
+                        <div class="central-graphic">
+                            <div class="graphic-rings">
+                                <div class="ring ring-1"></div>
+                                <div class="ring ring-2"></div>
+                                <div class="ring ring-3"></div>
+                            </div>
+                            <div class="graphic-core">
+                                <div class="core-inner"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="data-streams">
+                            <div class="stream stream-1"></div>
+                            <div class="stream stream-2"></div>
+                            <div class="stream stream-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <div class="scroll-text">Scroll to explore</div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="section about-section" data-section="about">
+            <div class="section-transition"></div>
+            <div class="container">
+                <div class="section-content">
+                    <div class="section-header">
+                        <span class="section-number">01</span>
+                        <h2 class="section-title">About Excellence</h2>
+                    </div>
+                    <div class="section-body">
+                        <p class="section-description">
+                            We are digital architects, crafting experiences that transcend 
+                            the ordinary and elevate brands to extraordinary heights.
+                        </p>
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">⚡</div>
+                                <h3>Lightning Fast</h3>
+                                <p>Optimized performance</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🎯</div>
+                                <h3>Precision Targeting</h3>
+                                <p>Data-driven strategies</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🚀</div>
+                                <h3>Growth Focused</h3>
+                                <p>Measurable results</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="section services-section" data-section="services">
+            <div class="section-transition"></div>
+            <div class="container">
+                <div class="section-content">
+                    <div class="section-header">
+                        <span class="section-number">02</span>
+                        <h2 class="section-title">Our Services</h2>
+                    </div>
+                    <div class="section-body">
+                        <p class="section-description">
+                            Comprehensive digital solutions designed to amplify your brand's 
+                            presence and drive meaningful engagement.
+                        </p>
+                        <div class="services-grid">
+                            <div class="service-card">
+                                <h3>Brand Strategy</h3>
+                                <p>Strategic positioning and identity development</p>
+                            </div>
+                            <div class="service-card">
+                                <h3>Digital Marketing</h3>
+                                <p>Multi-channel campaigns that convert</p>
+                            </div>
+                            <div class="service-card">
+                                <h3>Web Development</h3>
+                                <p>Custom solutions built for performance</p>
+                            </div>
+                            <div class="service-card">
+                                <h3>Creative Design</h3>
+                                <p>Visual storytelling that captivates</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Work Section -->
+        <section id="work" class="section work-section" data-section="work">
+            <div class="section-transition"></div>
+            <div class="container">
+                <div class="section-content">
+                    <div class="section-header">
+                        <span class="section-number">03</span>
+                        <h2 class="section-title">Featured Work</h2>
+                    </div>
+                    <div class="section-body">
+                        <p class="section-description">
+                            Showcasing transformative projects that demonstrate our 
+                            commitment to excellence and innovation.
+                        </p>
+                        <div class="work-preview">
+                            <div class="work-placeholder">
+                                <div class="work-visual"></div>
+                                <h3>Portfolio Coming Soon</h3>
+                                <p>Exceptional case studies in development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section" data-section="contact">
+            <div class="section-transition"></div>
+            <div class="container">
+                <div class="section-content">
+                    <div class="section-header">
+                        <span class="section-number">04</span>
+                        <h2 class="section-title">Let's Connect</h2>
+                    </div>
+                    <div class="section-body">
+                        <p class="section-description">
+                            Ready to elevate your brand? Let's discuss how we can 
+                            transform your digital presence together.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">hello@abovethesocial.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+1 (555) 123-4567</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
