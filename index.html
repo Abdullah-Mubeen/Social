@@ -86,12 +86,13 @@
 
             <div class="hero-container">
                 <div class="hero-content">
-          
+
                     <h1 class="hero-title">
                         Above the Social
                     </h1>
                     <p class="hero-subtitle">
-                       Helping bold brands rise above the noise — with content that connects, ads that stop the scroll, and strategy that drives real growth.
+                        Helping brands rise above the noise — with content that connects, ads that stop the scroll,
+                        and strategy that drives real growth.
                     </p>
                     <div class="accent-line"></div>
                 </div>
@@ -137,41 +138,390 @@
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="section services-section" data-section="services">
-            <div class="section-transition"></div>
+        <section id="services" class="services-section" data-section="services">
             <div class="container">
-                <div class="section-content">
-                    <div class="section-header">
-                        <span class="section-number">02</span>
-                        <h2 class="section-title">Our Services</h2>
+                <div class="services-layout">
+                    <!-- Sticky Header -->
+                    <div class="services-header">
+                        <div class="section-number">02</div>
+                        <h2 class="section-title">How We<br>Solve It</h2>
+                        <div class="section-subtitle">Our Strategic Solutions</div>
+                        <div class="header-decoration"></div>
                     </div>
-                    <div class="section-body">
-                        <p class="section-description">
-                            Comprehensive digital solutions designed to amplify your brand's
-                            presence and drive meaningful engagement.
-                        </p>
-                        <div class="services-grid">
-                            <div class="service-card">
-                                <h3>Brand Strategy</h3>
-                                <p>Strategic positioning and identity development</p>
+
+                    <!-- Services Cards -->
+                    <div class="services-content">
+                        <div class="service-card" data-service="strategy">
+                            <div class="service-number">01</div>
+                            <div class="service-info">
+                                <h3 class="service-title">Brand Strategy</h3>
+                                <p class="service-description">Strategic positioning and identity development that
+                                    defines your unique market presence
+                                </p>
+                                <div class="service-features">
+                                    <span class="feature-tag">Positioning</span>
+                                    <span class="feature-tag">Identity</span>
+                                    <span class="feature-tag">Research</span>
+                                </div>
                             </div>
-                            <div class="service-card">
-                                <h3>Digital Marketing</h3>
-                                <p>Multi-channel campaigns that convert</p>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
                             </div>
-                            <div class="service-card">
-                                <h3>Web Development</h3>
-                                <p>Custom solutions built for performance</p>
+                        </div>
+
+                        <div class="service-card" data-service="digital">
+                            <div class="service-number">02</div>
+                            <div class="service-info">
+                                <h3 class="service-title">Digital Marketing</h3>
+                                <p class="service-description">Multi-channel campaigns that convert prospects into loyal
+                                    customers through data-driven strategies</p>
+                                <div class="service-features">
+                                    <span class="feature-tag">SEO</span>
+                                    <span class="feature-tag">Social Media</span>
+                                    <span class="feature-tag">Analytics</span>
+                                </div>
                             </div>
-                            <div class="service-card">
-                                <h3>Creative Design</h3>
-                                <p>Visual storytelling that captivates</p>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="development">
+                            <div class="service-number">03</div>
+                            <div class="service-info">
+                                <h3 class="service-title">Web Development</h3>
+                                <p class="service-description">Custom solutions built for performance, scalability, and
+                                    exceptional user experiences</p>
+                                <div class="service-features">
+                                    <span class="feature-tag">Custom Code</span>
+                                    <span class="feature-tag">Mobile-First</span>
+                                    <span class="feature-tag">Scalable</span>
+                                </div>
+                            </div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path
+                                        d="M17.5 19H9a7 7 0 01-7-7 7 7 0 017-7h8.5a4.5 4.5 0 110 9H9.5a2.5 2.5 0 110-5H17" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="creative">
+                            <div class="service-number">04</div>
+                            <div class="service-info">
+                                <h3 class="service-title">Creative Design</h3>
+                                <p class="service-description">Visual storytelling that captivates audiences and
+                                    communicates your brand's essence</p>
+                                <div class="service-features">
+                                    <span class="feature-tag">Branding</span>
+                                    <span class="feature-tag">UI/UX</span>
+                                    <span class="feature-tag">Graphics</span>
+                                </div>
+                            </div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 19l16-16m0 0H9m11 0v11" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="development">
+                            <div class="service-number">05</div>
+                            <div class="service-info">
+                                <h3 class="service-title">Consulting</h3>
+                                <p class="service-description">Strategic guidance to optimize your digital transformation and business growth</p>
+                                <div class="service-features">
+                                    <span class="feature-tag">Strategy</span>
+                                    <span class="feature-tag">Analysis</span>
+                                    <span class="feature-tag">Growth</span>
+                                </div>
+                            </div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path
+                                        d="M17.5 19H9a7 7 0 01-7-7 7 7 0 017-7h8.5a4.5 4.5 0 110 9H9.5a2.5 2.5 0 110-5H17" />
+                                </svg>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <style>
+            .services-section {
+                min-height: 100vh;
+                background: var(--primary);
+                color: var(--light);
+                padding: 6rem 0;
+                position: relative;
+            }
+
+            .container {
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 0 2rem;
+                width: 100%;
+            }
+
+            .services-layout {
+                display: grid;
+                grid-template-columns: 400px 1fr;
+                gap: 6rem;
+                align-items: start;
+                min-height: 80vh;
+            }
+
+            /* Sticky Header */
+            .services-header {
+                position: sticky;
+                top: 8rem;
+                padding-right: 2rem;
+            }
+
+
+            .section-title {
+                font-size: clamp(2.5rem, 4vw, 3.5rem);
+                font-weight: 700;
+                letter-spacing: -0.04em;
+                line-height: 1.1;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+                color: var(--gray-400);
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeInUp 0.8s ease-out 0.6s forwards;
+            }
+
+            .header-decoration {
+                width: 60px;
+                height: 2px;
+                background: linear-gradient(90deg, var(--accent), rgba(var(--accent-rgb), 0.8));
+                border-radius: 1px;
+                opacity: 0;
+                transform: scaleX(0);
+                transform-origin: left;
+                animation: scaleX 0.8s ease-out 0.8s forwards;
+            }
+
+            /* Services Content */
+            .services-content {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .service-card {
+                background: var(--secondary);
+                border: 1px solid rgba(255, 255, 255, 0.05);
+                border-radius: 16px;
+                padding: 2.5rem;
+                position: relative;
+                overflow: hidden;
+                opacity: 0;
+                transform: translateY(40px);
+                transition: var(--transition);
+                cursor: pointer;
+                display: grid;
+                grid-template-columns: 60px 1fr 60px;
+                gap: 2rem;
+                align-items: start;
+            }
+
+            .service-card:hover {
+                transform: translateY(-4px);
+                border-color: rgba(99, 102, 241, 0.2);
+                box-shadow: var(--shadow-xl);
+            }
+
+            .service-card:hover::before {
+                opacity: 0.6;
+            }
+
+            .service-number {
+                font-family: var(--font-mono);
+                font-size: 0.875rem;
+                color: var(--accent);
+                font-weight: 600;
+                opacity: 0.7;
+                writing-mode: vertical-lr;
+                text-orientation: mixed;
+                align-self: center;
+                transition: all 0.3s ease;
+            }
+
+            .service-card:hover .service-number {
+                opacity: 1;
+                color: rgba(var(--accent-rgb), 0.8);
+            }
+
+            .service-info {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .service-card:hover .service-title {
+                color: var(--accent-light);
+            }
+
+            .service-description {
+                color: var(--gray-300);
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+            }
+
+            .service-features {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .feature-tag {
+                background: rgba(99, 102, 241, 0.1);
+                color: var(--accent-light);
+                padding: 0.375rem 0.875rem;
+                border-radius: 20px;
+                font-size: 0.75rem;
+                font-weight: 500;
+                border: 1px solid rgba(99, 102, 241, 0.2);
+                transition: all 0.3s ease;
+            }
+
+            .service-card:hover .feature-tag {
+                background: rgba(99, 102, 241, 0.15);
+                border-color: rgba(99, 102, 241, 0.3);
+            }
+
+            .service-icon {
+                width: 60px;
+                height: 60px;
+                color: var(--accent);
+                opacity: 0.7;
+                transition: all 0.3s ease;
+                align-self: center;
+            }
+
+            .service-icon svg {
+                width: 100%;
+                height: 100%;
+            }
+
+            .service-card:hover .service-icon {
+                opacity: 1;
+                color: var(--accent-light);
+                transform: scale(1.1);
+            }
+
+            /* Animations */
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes scaleX {
+                from {
+                    opacity: 0;
+                    transform: scaleX(0);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: scaleX(1);
+                }
+            }
+
+            /* Responsive Design */
+            @media (max-width: 1200px) {
+                .services-layout {
+                    grid-template-columns: 350px 1fr;
+                    gap: 4rem;
+                }
+
+                .service-card {
+                    padding: 2rem;
+                    grid-template-columns: 50px 1fr 50px;
+                    gap: 1.5rem;
+                }
+            }
+
+            @media (max-width: 968px) {
+                .services-layout {
+                    grid-template-columns: 1fr;
+                    gap: 3rem;
+                }
+
+                .services-header {
+                    position: relative;
+                    top: 0;
+                    padding-right: 0;
+                    text-align: center;
+                    padding-bottom: 2rem;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                }
+
+                .header-decoration {
+                    margin: 0 auto;
+                }
+
+                .service-card {
+                    grid-template-columns: 1fr;
+                    gap: 1.5rem;
+                    text-align: left;
+                }
+
+                .service-number {
+                    writing-mode: horizontal-tb;
+                    text-orientation: initial;
+                    align-self: start;
+                }
+
+                .service-icon {
+                    justify-self: end;
+                    align-self: start;
+                }
+            }
+
+            @media (max-width: 640px) {
+                .container {
+                    padding: 0 1rem;
+                }
+
+                .services-section {
+                    padding: 4rem 0;
+                }
+
+                .service-card {
+                    padding: 1.5rem;
+                    gap: 1rem;
+                }
+
+                .section-title {
+                    font-size: 2.5rem;
+                }
+            }
+
+            /* Service card entrance animation will be handled by JavaScript */
+            .service-card.animate {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+
 
         <!-- Work Section -->
         <section id="work" class="section work-section" data-section="work">

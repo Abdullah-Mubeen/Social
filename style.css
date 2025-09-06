@@ -682,11 +682,6 @@ body {
     color: var(--primary);
 }
 
-.services-section {
-    background: var(--primary);
-    color: var(--light);
-}
-
 .work-section {
     background: var(--gray-100);
     color: var(--primary);
