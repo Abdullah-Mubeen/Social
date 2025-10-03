@@ -326,3 +326,92 @@ document.addEventListener('visibilitychange', () => {
         document.body.style.animationPlayState = 'running';
     }
 });
+
+
+let currentStep = 1;
+const totalSteps = 3;
+
+function openContactModal(event) {
+    if (event) event.preventDefault();
+    document.getElementById('contactModal').classList.add('active');
+    document.body.classList.add('modal-open');
+    currentStep = 1;
+    updateProgress();
+}
+
+function closeContactModal() {
+    document.getElementById('contactModal').classList.remove('active');
+    document.body.classList.remove('modal-open');
+}
+
+function nextStep() {
+    if (currentStep === 1) {
+        const selected = document.querySelector('input[name="purpose"]:checked');
+        if (!selected) {
+            alert('Please select an option to continue');
+            return;
+        }
+    }
+    
+    if (currentStep < totalSteps) {
+        currentStep++;
+        updateStepDisplay();
+        updateProgress();
+    }
+}
+
+function previousStep() {
+    if (currentStep > 1) {
+        currentStep--;
+        updateStepDisplay();
+        updateProgress();
+    }
+}
+
+function updateStepDisplay() {
+    document.querySelectorAll('.form-step').forEach((step, index) => {
+        step.classList.toggle('active', index + 1 === currentStep);
+    });
+    
+    document.querySelector('.btn-back').style.display = currentStep > 1 ? 'flex' : 'none';
+    document.querySelector('.btn-next').style.display = currentStep < totalSteps ? 'flex' : 'none';
+    document.querySelector('.btn-submit').style.display = currentStep === totalSteps ? 'flex' : 'none';
+}
+
+function updateProgress() {
+    const progress = (currentStep / totalSteps) * 100;
+    document.getElementById('progressFill').style.width = progress + '%';
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    
+    const formData = {
+        purpose: document.querySelector('input[name="purpose"]:checked')?.value,
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value,
+        services: Array.from(document.querySelectorAll('input[name="services"]:checked')).map(cb => cb.value),
+        message: document.getElementById('message').value
+    };
+    
+    console.log('Form submitted:', formData);
+    
+    const btn = document.querySelector('.btn-submit');
+    btn.innerHTML = '<span>Message Sent!</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    
+    setTimeout(() => {
+        closeContactModal();
+        document.querySelectorAll('input, textarea').forEach(input => input.value = '');
+        document.querySelectorAll('input[type="checkbox"], input[type="radio"]').forEach(input => input.checked = false);
+        currentStep = 1;
+        updateStepDisplay();
+        updateProgress();
+        btn.innerHTML = '<span>Send Message</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    }, 2000);
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeContactModal();
+});
