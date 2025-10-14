@@ -33,69 +33,76 @@
         <div class="modal-content">
             <button class="modal-close" onclick="closeContactModal()">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                    <path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
                 </svg>
             </button>
-            
+
             <!-- Multi-step Form -->
             <div class="form-container">
                 <!-- Progress Indicator -->
                 <div class="progress-bar">
                     <div class="progress-fill" id="progressFill"></div>
                 </div>
-                
+
                 <!-- Step 1: Purpose Selection -->
                 <div class="form-step active" data-step="1">
                     <div class="step-header">
                         <div class="step-icon">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <circle cx="16" cy="16" r="14" stroke="#caf413" stroke-width="2"/>
-                                <path d="M12 16L14.5 18.5L20 13" stroke="#caf413" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="16" cy="16" r="14" stroke="#caf413" stroke-width="2" />
+                                <path d="M12 16L14.5 18.5L20 13" stroke="#caf413" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
                         <h2>How can we help you?</h2>
                         <p>Choose what brings you here today</p>
                     </div>
-                    
+
                     <div class="purpose-grid">
                         <label class="purpose-card" data-purpose="consultation">
                             <input type="radio" name="purpose" value="consultation">
                             <div class="purpose-content">
                                 <div class="purpose-icon">
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                        <rect x="4" y="6" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
-                                        <path d="M4 10H24" stroke="currentColor" stroke-width="1.5"/>
-                                        <circle cx="9" cy="14" r="1.5" fill="currentColor"/>
-                                        <circle cx="14" cy="14" r="1.5" fill="currentColor"/>
-                                        <circle cx="19" cy="14" r="1.5" fill="currentColor"/>
+                                        <rect x="4" y="6" width="20" height="16" rx="2" stroke="currentColor"
+                                            stroke-width="1.5" />
+                                        <path d="M4 10H24" stroke="currentColor" stroke-width="1.5" />
+                                        <circle cx="9" cy="14" r="1.5" fill="currentColor" />
+                                        <circle cx="14" cy="14" r="1.5" fill="currentColor" />
+                                        <circle cx="19" cy="14" r="1.5" fill="currentColor" />
                                     </svg>
                                 </div>
                                 <h3>Book a Consultation</h3>
                                 <p>Schedule a free 30-min strategy call</p>
                             </div>
                         </label>
-                        
+
                         <label class="purpose-card" data-purpose="learn">
                             <input type="radio" name="purpose" value="learn">
                             <div class="purpose-content">
                                 <div class="purpose-icon">
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                        <path d="M14 24C19.5228 24 24 19.5228 24 14C24 8.47715 19.5228 4 14 4C8.47715 4 4 8.47715 4 14C4 19.5228 8.47715 24 14 24Z" stroke="currentColor" stroke-width="1.5"/>
-                                        <path d="M14 10V14L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                        <path
+                                            d="M14 24C19.5228 24 24 19.5228 24 14C24 8.47715 19.5228 4 14 4C8.47715 4 4 8.47715 4 14C4 19.5228 8.47715 24 14 24Z"
+                                            stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M14 10V14L17 17" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
                                     </svg>
                                 </div>
                                 <h3>Learn More</h3>
                                 <p>Get detailed info about our services</p>
                             </div>
                         </label>
-                        
+
                         <label class="purpose-card" data-purpose="quote">
                             <input type="radio" name="purpose" value="quote">
                             <div class="purpose-content">
                                 <div class="purpose-icon">
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                        <rect x="5" y="7" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
-                                        <path d="M5 11H23M9 15H14M9 18H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                        <rect x="5" y="7" width="18" height="14" rx="2" stroke="currentColor"
+                                            stroke-width="1.5" />
+                                        <path d="M5 11H23M9 15H14M9 18H19" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
                                     </svg>
                                 </div>
                                 <h3>Get a Custom Quote</h3>
@@ -104,52 +111,56 @@
                         </label>
                     </div>
                 </div>
-                
+
                 <!-- Step 2: Contact Information -->
                 <div class="form-step" data-step="2">
                     <div class="step-header">
                         <div class="step-icon">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <path d="M16 16C19.3137 16 22 13.3137 22 10C22 6.68629 19.3137 4 16 4C12.6863 4 10 6.68629 10 10C10 13.3137 12.6863 16 16 16Z" stroke="#caf413" stroke-width="2"/>
-                                <path d="M6 28C6 22.4772 10.4772 18 16 18C21.5228 18 26 22.4772 26 28" stroke="#caf413" stroke-width="2" stroke-linecap="round"/>
+                                <path
+                                    d="M16 16C19.3137 16 22 13.3137 22 10C22 6.68629 19.3137 4 16 4C12.6863 4 10 6.68629 10 10C10 13.3137 12.6863 16 16 16Z"
+                                    stroke="#caf413" stroke-width="2" />
+                                <path d="M6 28C6 22.4772 10.4772 18 16 18C21.5228 18 26 22.4772 26 28" stroke="#caf413"
+                                    stroke-width="2" stroke-linecap="round" />
                             </svg>
                         </div>
                         <h2>Let's get to know you</h2>
                         <p>Share your contact details</p>
                     </div>
-                    
+
                     <div class="form-fields">
                         <div class="field-group">
                             <input type="text" id="name" name="name" placeholder="Full Name" required>
                         </div>
-                        
+
                         <div class="field-group">
                             <input type="email" id="email" name="email" placeholder="Email Address" required>
                         </div>
-                        
+
                         <div class="field-group">
                             <input type="tel" id="phone" name="phone" placeholder="Phone Number (Optional)">
                         </div>
-                        
+
                         <div class="field-group">
                             <input type="text" id="company" name="company" placeholder="Company Name (Optional)">
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Step 3: Project Details -->
                 <div class="form-step" data-step="3">
                     <div class="step-header">
                         <div class="step-icon">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <rect x="6" y="6" width="20" height="20" rx="2" stroke="#caf413" stroke-width="2"/>
-                                <path d="M12 12H20M12 16H20M12 20H16" stroke="#caf413" stroke-width="2" stroke-linecap="round"/>
+                                <rect x="6" y="6" width="20" height="20" rx="2" stroke="#caf413" stroke-width="2" />
+                                <path d="M12 12H20M12 16H20M12 20H16" stroke="#caf413" stroke-width="2"
+                                    stroke-linecap="round" />
                             </svg>
                         </div>
                         <h2>Tell us about your project</h2>
                         <p>What services are you interested in?</p>
                     </div>
-                    
+
                     <div class="services-compact">
                         <label class="service-chip">
                             <input type="checkbox" name="services" value="social-media">
@@ -176,53 +187,59 @@
                             <span>Email Marketing</span>
                         </label>
                     </div>
-                    
+
                     <div class="form-fields" style="margin-top: 24px;">
                         <div class="field-group">
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us more about your goals and challenges..." required></textarea>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us more about your goals and challenges..." required></textarea>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Navigation Buttons -->
                 <div class="form-navigation">
                     <button type="button" class="btn-back" onclick="previousStep()" style="display: none;">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                         <span>Back</span>
                     </button>
-                    
+
                     <button type="button" class="btn-next" onclick="nextStep()">
                         <span>Continue</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M8 4L14 10L8 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 4L14 10L8 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                     </button>
-                    
+
                     <button type="submit" class="btn-submit" onclick="handleSubmit(event)" style="display: none;">
                         <span>Send Message</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    
- 
+
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Turn Busy Startup Chaos into Scroll-Stopping Growth</h1>
+                <h1>We Don’t Just Grow Brands <br> We Build Digital Momentum.</h1>
 
-                <p class="subtitle">We help startups & business owners build visibility, trust & conversions with
-                    content, ads, and smart digital strategy that actually works.</p>
+                <p class="subtitle">From strategy to storytelling, ads to analytics we help brands move with clarity,
+                    scale with confidence, and stay ahead in a noisy digital world.
+                    Because growth isn’t luck. It’s design</p>
 
                 <div class="hero-actions">
-                    <a href="#cta" class="btn btn-primary btn-large" onclick="openContactModal(event)">Book Your Free Growth Call</a>
+                    <a href="#cta" class="btn btn-primary btn-large" onclick="openContactModal(event)">Book Your Free
+                        Strategy Call</a>
                     <a href="#services" class="btn btn-secondary btn-large">Explore Services</a>
                 </div>
             </div>
@@ -718,68 +735,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="pricing section" id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2>Choose Your Growth Package</h2>
-                <p class="section-subtitle">Transparent pricing with no hidden fees. Every package includes our
-                    signature growth methodology.</p>
-            </div>
-
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Starter</h3>
-                    <div class="price">$1,500</div>
-                    <div class="price-subtitle">Perfect for new businesses</div>
-                    <ul class="feature-list">
-                        <li>Social Media Management (3 platforms)</li>
-                        <li>Professional Content Creation (10 posts/month)</li>
-                        <li>Basic Analytics & Performance Reports</li>
-                        <li>Monthly Strategy Review & Optimization</li>
-                        <li>Email Support & Consultation</li>
-                        <li>Brand Guidelines Setup</li>
-                    </ul>
-                    <a href="#cta" class="btn btn-primary" style="width: 100%;" onclick="openContactModal(event)">Get Started</a>
-                </div>
-
-                <div class="pricing-card featured">
-                    <div class="featured-badge">Most Popular</div>
-                    <h3>Growth</h3>
-                    <div class="price">$3,500</div>
-                    <div class="price-subtitle">Best value for scaling businesses</div>
-                    <ul class="feature-list">
-                        <li>Everything in Starter Package</li>
-                        <li>Paid Ad Campaigns & Management</li>
-                        <li>Email Marketing Automation Setup</li>
-                        <li>Weekly Performance Reports & Insights</li>
-                        <li>Brand Identity & Visual Design</li>
-                        <li>Priority Phone & Email Support</li>
-                        <li>Competitor Analysis & Positioning</li>
-                    </ul>
-                    <a href="#cta" class="btn btn-primary" style="width: 100%;" onclick="openContactModal(event)">Choose Growth</a>
-                </div>
-
-                <div class="pricing-card">
-                    <h3>Dominate</h3>
-                    <div class="price">$7,500</div>
-                    <div class="price-subtitle">Complete digital transformation</div>
-                    <ul class="feature-list">
-                        <li>Everything in Growth Package</li>
-                        <li>SEO & Website Optimization</li>
-                        <li>Influencer Campaign Management</li>
-                        <li>24/7 Priority Support & Consultation</li>
-                        <li>Custom Strategy Development</li>
-                        <li>Dedicated Account Manager</li>
-                        <li>Quarterly Business Reviews</li>
-                    </ul>
-                    <a href="#cta" class="btn btn-primary" style="width: 100%;" onclick="openContactModal(event)">Go Premium</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section> 
 
     <!-- Guarantee -->
     <section class="guarantee section-sm">
